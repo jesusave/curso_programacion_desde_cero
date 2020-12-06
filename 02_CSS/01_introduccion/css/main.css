@@ -1,0 +1,33 @@
+/*
+	Los selectores son una instruccion que podemos usar para poder seleccionar etiquetas de HTML
+	El selector es el mismo nombre que la etiqueta
+*/
+
+body {
+	/*EL codigo del color esta en hexadecimal*/
+	background-color: #252525;
+	color: #ffffff;
+}
+
+/* Selectores de Id y class */
+.h2 {
+	font-size: 42px;
+}
+
+/*Usamos el punto (.) para seleccionar nuestras clases*/
+.h3 {
+	font-size: 32px;
+}
+
+.text-yellow {
+	color: #ffff00;
+}
+
+/* 
+	Usamos el numeral para seleccionar nuestro id
+
+	El id es un valor unico en nuestro html
+*/
+#spanRed {
+	color: #ff0000;
+}

@@ -1,0 +1,4 @@
+1 - Contar con un navegador (Google Chrome de preferencia)
+2 - Un editor de codigo (https://code.visualstudio.com)
+3 - Extenciones para VSCODE
+    - Live Serve sirve para refrescar la pagina automaticamente

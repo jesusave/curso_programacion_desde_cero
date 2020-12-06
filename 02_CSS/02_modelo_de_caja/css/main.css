@@ -1,0 +1,182 @@
+body {
+	background-color: #252525;
+}
+
+/* 
+- Aplica a todos los cuatro lados 
+margin: 1em; 
+
+* em, (no confundir con la etiqueta <em> de HTML) relativa respecto del tamaño de letra del elemento.
+
+- Vertical | Horizontal 
+margin: 5% auto;
+
+- Arriba | Horizontal | Abajo 
+margin: 1em auto 2em; 
+
+- Arriba | Derecha | Abajo | Izquierda 
+margin: 2px 1em 0 auto;
+
+* px, (píxel) relativa respecto de la resolución de la pantalla del dispositivo en el que se visualiza la página HTML.
+
+- Valores globales 
+	margin: inherit;
+	margin: initial;
+	margin: unset;
+
+*Unidades relativas
+
+    em, relativa respecto del tamaño de letra empleado. Aunque no es una definición exacta, el valor de 1 em se puede aproximar por la anchura de la letra M "eme mayúscula") del tipo de letra que se esté utilizando
+    ex, relativa respecto de la altura de la letra x "equis minúscula") del tipo de letra que se esté utilizando
+    px, (píxel) relativa respecto de la pantalla del usuario
+
+*Unidades absolutas
+
+	in, pulgadas ("inches", en inglés). Una pulgada equivale a 2.54 centímetros.
+	cm, centímetros.
+	mm, milímetros.
+	pt, puntos. Un punto equivale a 1 pulgada/72, es decir, unos 0.35 milímetros.
+	pc, picas. Una pica equivale a 12 puntos, es decir, unos 4.23 milímetros.
+
+*/
+.caja {
+	margin: 8px; /*La propiedad margin establece el margen para los cuatro lados*/
+	/*
+	Valores
+		permitidos	Uno, dos, tres o cuatro de los siguientes valores:
+
+		    medida
+		    porcentaje
+		    auto
+		    inherit
+
+		Si se utilizan porcentajes, hace referencia a la anchura del elemento en el que se encuentra
+		margin-top: 10px;
+		margin-right: 10px;
+	  	margin-bottom: 10px;
+	  	margin-left: 10px;
+	*/
+	padding: 8px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	/*
+	Valores
+		permitidos	Uno, dos, tres o cuatro de los siguientes valores:
+
+		    medida
+		    porcentaje
+		    inherit
+
+		Si se utilizan porcentajes, hace referencia a la anchura del elemento en el que se encuentra
+
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+	*/
+	border-style: solid; /*La propiedad border-style establece el estilo de línea para los cuatro lados del borde de un elemento*/
+	/*
+
+	Valores
+		permitidos Uno, dos, tres o cuatro de los siguientes valores:
+
+		    none
+		    hidden
+		    dotted
+		    dashed
+		    solid
+		    double
+		    groove
+		    ridge
+		    inset
+		    outset
+		    inherit
+
+		border-top-style: solid;
+		border-right-style: dashed;
+		border-bottom-style: solid;
+		border-left-style: solid;
+	*/
+
+	border-width: 8px; /*Establece la anchura de algunos o todos los bordes de los elementos*/
+	/*
+	Valores
+		permitidos	Uno, dos, tres o cuatro de los siguientes valores:
+
+		    thin
+		    medium
+		    thick
+		    medida
+		    inherit
+
+		border-top-width: 3px;
+	  	border-right-width: 3px;
+	  	border-bottom-width: 3px;
+	  	border-left-width: 3px;
+	*/
+	border-color: #faa; /*Establece el color de algunos o todos los bordes de los elementos*/
+	/*
+	Valores
+		permitidos	Uno, dos, tres o cuatro de los siguientes valores:
+
+		    color
+		    transparent
+		    inherit
+
+		border-top-color: red;
+  		border-right-color: red;
+  		border-bottom-color: red;
+  		border-left-color: red;
+	*/
+	border-left: 3px dashed #252525; /* Establece algunas o todas las propiedades del borde izquierdo de los elementos */
+	/*
+	Valores
+		permitidos	Alguno o todos los siguientes valores y en cualquier orden:
+
+		    anchura
+		    Estilo de borde
+		    color
+	*/
+
+	border-radius: 8px; /* border-radius permite definir qué tan redondeadas serán las esquinas*/
+	height: 100px; /*Establece la altura de los elementos de bloque*/
+	/*
+	Valores
+		permitidos	Uno y sólo uno de los siguientes valores:
+
+		    medida
+		    porcentaje
+		    auto
+		    inherit
+
+		Si se utilizan porcentajes, hace referencia a la altura del elemento en el que se encuentra. Si este elemento contenedor no tiene establecida una altura de forma 
+		explícita y el elemento para el que se define la altura no está posicionado de forma absoluta, se ignora la altura en porcentaje y se sustituye por el valor auto
+	*/
+	width: 100px; /*Establece la anchura de los elementos de bloque*/
+	/*
+	Valores
+		permitidos	Uno y sólo uno de los siguientes valores:
+
+		    medida
+		    porcentaje
+		    auto
+		    inherit
+
+		Si se utilizan porcentajes, hace referencia a la anchura del elemento en el que se encuentra
+	*/
+	background-color: #aaf; /*Establece el color de fondo de un elemento*/
+	/*
+	Valores
+		permitidos	Uno y sólo uno de los siguientes valores:
+
+		    color
+		    transparent
+		    inherit
+	*/
+	color: #fff; /*Establece el color del texto de un elemento*/
+	/*
+	Valores
+		permitidos	Uno y sólo uno de los siguientes valores:
+
+		    color
+		    inherit
+	*/
+}

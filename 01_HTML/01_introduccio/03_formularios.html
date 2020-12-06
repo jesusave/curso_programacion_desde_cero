@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <!--
+            Representa un formulario, consistiendo de controles que puede ser enviado a un servidor para procesamiento.
+            https://developer.mozilla.org/es/docs/Web/HTML/Elemento/form
+        -->
+        <form>
+            <!--El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario.-->
+            <fieldset>
+                <!--El elemento <legend> (leyenda) crea un título para un grupos los campos (<fieldset>) de un formulario.-->
+                <legend>Datos personales</legend>
+                <!--
+                    Representa el título de un control de formulario.
+                    El ID del elemento de formulario etiquetable relacionado en el mismo documento que el elemento label.
+                -->
+                <label for="texto">Input texto</label>
+
+                <!--
+                    Representa un campo de datos escrito que permite al usuario editar los datos.
+                    Los input constan de una propiedad TYPE la cual podemos cambiar de acuerdo a nuestras necesidades
+                    name: El nombre del control, el cual es enviado con los datos del formulario.
+                    id: identificador
+                    value: El valor inicial del control. Este atributo es opcional, excepto cuando el atributo type es radio o checkbox.
+                    https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input
+                -->
+                <input type="text" name="texto" id="texto" placeholder="Ingrese un texto cualquiera" required>
+
+                <br><br>
+                <label for="numero">Input number</label>
+                <input type="number" name="numero" id="numero" placeholder="Ingrese un numero" min="0" max="10">
+
+                <br><br>
+                <label for="contrasenia">Input password</label>
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingrese su contraseña">
+
+                <br><br>
+                <label for="correo">Inur correo</label>
+                <input type="email" name="correo" id="correo" placeholder="Correo electronico" required>
+
+                <br><br>
+                <label for="area_de_texto">Caja de texto</label>
+                <textarea name="area_de_texto" id="area_de_texto" cols="30" rows="3" placeholder="Caja de texto"></textarea>
+
+                <br><br>
+                <!--
+                    El elemento select (<select>) de HTML representa un control que muestra un menú de opciones.
+                -->
+                <label for="selector">Seleccione una opción</label>
+                <select name="selector" id="selector">
+                    <option value="" disabled selected>Opción deshabilitada</option>
+                    <option value="uno">UNO</option>
+                    <option value="dos">DOS</option>
+                    <option value="tres">TRES</option>
+                </select>
+
+                <br><br>
+                <label for="selector_multiple">Seleccione otra opción</label>
+                <select multiple name="selector_multiple" id="selector_multiple">
+                    <option value="" disabled selected>opcion deshabilitada</option>
+                    <option value="uno">01</option>
+                    <option value="dos">02</option>
+                    <option value="tres">03</option>
+                </select>
+
+                <br><br>
+                <label for="archivo">Subir un archivo</label>
+                <input type="file" name="archivo" id="archivo" accept="image/png, image/jpeg"> 
+                <!--Con accept le indicamos al usuario los archivos validos para adjuntar-->
+
+                <br><br>
+                <!--Input radio se usan para que el usuario pueda legir una opción-->
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Opción uno
+                </label>
+
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Opción dos
+                </label>
+
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> Opción tres (deshabilitada)
+                </label>
+
+                <br><br>
+                <label>
+                    <input type="checkbox">Opción 01
+                </label>
+
+                <label>
+                    <input type="checkbox" value="" checked> Opción 02
+                </label>
+
+                <label>
+                    <input type="checkbox" value="" disabled>Opción 03
+                </label>
+
+                <br><br>
+                <!--Botón que envía el formulario.-->
+                <input type="submit" value="Texto de mi boton"> <!--Input submit no se le puede agregar muchos elementos-->
+
+                <br><br>
+                <button>Guardar nuestro formulario</button> <!--La diferencia es que <button>puede tener contenido como iconos-->
+            </fieldset>
+        </form>
+    </body>
+</html>

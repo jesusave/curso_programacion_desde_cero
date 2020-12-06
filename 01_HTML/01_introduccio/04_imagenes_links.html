@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Imagenes y links</title>
+    </head>
+    <body>
+        <!--
+            IMG sirve para hacer referencia a una imagen en un directorio determinado
+            
+            Atributos:
+                src: La URL de la imagen. 
+                height: La altura de la imagen en píxeles CSS 
+                width: El ancho de la imagen en píxeles CSS
+        -->
+        <img src="" alt="Imagen de gatito" title="Imagen de gatito"> <!--Sin imagen-->
+        <br><br>
+        <img src="https://placekitten.com/g/200/300" alt="Imagen de gatito" title="Imagen de gatito"> <!--Imagen externa-->
+        <br><br>
+        <img src="img/300.jpeg" alt="Imagen de gatito" title="Imagen de gatito"> <!--Imagen local-->
+        <br><br>
+
+        <!--
+            Vinculos o links
+
+            Atributos:
+                download: Este atributo, indica descargar a los navegadores una URL en lugar de navegar hacia ella, por lo que el usuario será dirigido para salvarla como un archivo local.
+                href: Contiene una URL o un fragmento de URL al cual apunta el enlace.
+                target: Especifica en donde desplegar la URL enlazada.
+                    _self: Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.
+                    _blank: Carga la URL en un nuevo contexto de navegación.
+                    _parent: Carga la URL en el contexto de navegación padre (parent) del actual.
+                    _top: Carga la URL en le contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)).
+        -->
+        <a href="https://developer.mozilla.org">Ir a la documentación</a><br>
+        <a href="https://developer.mozilla.org" target="_self">Ir a la documentación con _self</a><br>
+        <a href="https://developer.mozilla.org" target="_blank">Ir a la documentación con _blak</a><br>
+        <a href="https://developer.mozilla.org" target="_parent">Ir a la documentación con _parent</a><br>
+        <a href="https://developer.mozilla.org" target="_top">Ir a la documentación con _top</a>
+
+    </body>
+</html>

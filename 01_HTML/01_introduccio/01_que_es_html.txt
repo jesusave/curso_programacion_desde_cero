@@ -1,0 +1,32 @@
+¿QUÉ ES HTML5?
+
+"HTML5 (Hyper Text Markup Language) es la última versión de HTML. El término representa dos conceptos diferentes:
+
+- Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos.
+- Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. A este conjunto 
+se le llama HTML5 y amigos, a menudo reducido a HTML5.
+
+- HyperText, cuyo significado es hipertexto, que no es más que un texto que enlaza con otros contenidos, que pueden ser otro texto u otro archivo. 
+Esto es la base del funcionamiento de la web tal y como la conocemos, que no es más que páginas y recursos interconectados.
+
+- Markup, que significa marca o etiqueta, ya que todas las páginas web están construidas en base a etiquetas, desde las primeras versiones hasta las 
+últimas etiquetas de HTML5. Un ejemplo de una etiqueta HTML es la que identifica a un párrafo, que se compone de la etiqueta, el contenido de la etiqueta 
+y el cierre del párrafo: <p>HOLA</p>.
+
+- Languaje, cuyo significado es lenguaje, porque HTML es un lenguaje, es decir, tiene sus normas, tiene su estructura y una serie de convenciones que 
+nos sirven para definir tanto la estructura como el contenido de una web.
+
+Algo importante a tener en cuenta y con lo que no hay que confundirse, es que porque HTML sea un lenguaje no quiere decir que sea un lenguaje programación. 
+HTML no lo es, ya que no tiene estructuras de lenguaje de programación, como los bucles, las condiciones, las funciones, etcétera.
+
+#Definición de HTML5
+Podemos definir HTML5 como un estándar que sirve para definir la estructura y el contenido de una página Web.
+
+#Funcionamiento HTML5
+
+Vamos a ver cómo es el proceso cuando se solicita una página HTML a través del navegador. El proceso es el siguiente:
+Desde el navegador se realiza una petición a un servidor, lo que se hace a través de una dirección del tipo http://..../index.html. 
+Después el servidor recupera de su disco duro esa página, la devuelve al navegador y la página se muestra.
+
+Documentación
+https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos
