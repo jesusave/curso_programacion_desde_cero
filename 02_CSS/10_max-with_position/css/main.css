@@ -1,0 +1,31 @@
+.parrafo {
+    max-width: 350px; /*Limita la anchura máxima de los elementos de bloque*/
+    /*
+    Valores permitidos	
+        Uno y sólo uno de los siguientes valores:
+            medida
+            porcentaje
+            none
+            inherit
+        Si se utilizan porcentajes, hace referencia a la anchura del elemento en el que se encuentra
+    
+        Valor inicial = none
+    */
+
+    background-color: aqua; /*Establece el color de fondo de un elemento*/
+
+    margin: auto; /*La propiedad margin establece el margen para los cuatro lados*/
+
+    position: fixed; /* Posiciona los elementos de forma normal, relativa, absoluta o fija */
+    /*
+    Valores permitidos	
+        Alguno o todos los siguientes valores y en cualquier orden:
+            static - posicionado de acuerdo al flujo normal del documento
+            relative - es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación a sí mismo
+            absolute - es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página.
+            fixed - es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página. 
+            inherit
+
+    Valor inicial = static
+    */
+}
