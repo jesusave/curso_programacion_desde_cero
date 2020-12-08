@@ -1,0 +1,27 @@
+/* La etiqueta P por defecto toma block */
+p {
+    display: block; /* Establece el tipo de caja generada por un elemento */
+    /*
+        Valores permitidos	
+            Uno y sólo uno de los siguientes valores:
+                inline - en linea
+                block - en bloque
+                list-item
+                run-in
+                inline-block
+                table
+                inline-table
+                table-row-group
+                table-header-group
+                table-footer-group
+                table-row
+                table-column-group
+                table-column
+                table-cell
+                table-caption
+                none - invisible
+                inherit
+        
+        Valor inicial = inline
+    */
+}
