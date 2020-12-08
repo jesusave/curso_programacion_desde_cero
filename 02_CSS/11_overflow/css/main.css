@@ -1,0 +1,21 @@
+#over {
+    width: 100px; /*Establece la anchura de los elementos de bloque*/
+    height: 100px; /*Establece la altura de los elementos de bloque*/
+
+    overflow: auto; /*Controla el comportamiento de los contenidos que no caben en su elemento contenedor*/
+    /*
+        Valores permitidos	
+            Uno y sólo uno de los siguientes valores:
+                visible
+                hidden
+                scroll
+                auto
+                inherit
+
+        Valor inicial = visible
+
+        Tambien podemos usar
+            overflow-x - Para el contenido que no cabe en el eje de las X
+            overflow-y - Para el contenido que no cabe en el eje de las Y
+    */
+}
