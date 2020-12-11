@@ -1,0 +1,43 @@
+ul {
+    list-style-type: none; /*Establece el marcador de los elementos de la lista*/
+    /*
+        Valores permitidos	
+            Uno y sólo uno de los siguientes valores:
+                disc 
+                circle
+                square
+                decimal
+                decimal-leading-zero
+                lower-romanupper-roman
+                lower-greek
+                lower-latin
+                upper-latin
+                armenian
+                georgian
+                lower-alpha
+                upper-alphanone
+                inherit
+
+        Valor inicial = disc
+    */
+    background-color: tomato; /*Establece el color de fondo de un elemento*/
+    border: 2px solid #dddddd; /*Establece algunas o todas las propiedades de todos los bordes de los elementos*/
+    /*
+		Valores permitidos	
+			Alguno o todos los siguientes valores y en cualquier orden:
+				anchura
+				Estilo de borde
+				color
+		
+		Valor inicial = Cada propiedad define su propio valor por defecto
+    */
+    border-radius: 4px; /* border-radius permite definir qué tan redondeadas serán las esquinas*/
+    padding-left: 0px;
+}
+
+/* Seleccionar un elemento dentro de otro elemento */
+ul li {
+    color: white; /*Establece el color del texto de un elemento*/
+    border-bottom: solid 2px #dddddd;
+    padding: 15px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+}

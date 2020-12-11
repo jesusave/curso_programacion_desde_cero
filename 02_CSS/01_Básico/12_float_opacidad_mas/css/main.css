@@ -1,0 +1,26 @@
+img {
+    float: right; /*Posiciona los elementos de forma flotante*/
+    /*
+        Valores permitidos	
+            Alguno o todos los siguientes valores y en cualquier orden:
+                left
+                right
+                none
+                inherit
+
+        Valor inicial = none
+    */
+
+    opacity: 0.5; /*La propiedad CSS opacity define la transparencia de un elemento.*/
+    /*
+        Es un número cuyo valor se encuentra entre 0.0 y 1.0.
+    */
+}
+
+img:hover {
+    opacity: 1; /*La propiedad CSS opacity define la transparencia de un elemento.*/
+}
+
+div p {
+    color: brown; /*Establece el color del texto de un elemento*/
+}

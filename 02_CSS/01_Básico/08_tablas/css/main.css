@@ -1,0 +1,53 @@
+table {
+    width: 100%; /*Establece la anchura de algunos o todos los bordes de los elementos*/
+    background-color: wheat; /*Establece el color de fondo de un elemento*/
+    border-collapse: collapse; /* Selecciona el modelo de bordes de las celdas de la tabla */
+    /*
+        Valores permitidos	
+            Uno y sólo uno de los siguientes valores:
+                collapse
+                separate
+                inherit
+        
+        Valor inicial = separate
+    */
+}
+
+table th {
+    background-color: tomato; /*Establece el color de fondo de un elemento*/
+    color: white; /*Establece el color del texto de un elemento*/
+    text-align: center; /*Establece la alineación del contenido de un elemento de bloque*/
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* 
+    La pseudo-clase :nth-child() de CSS coincide con uno o más elementos en función de su posición entre un grupo de hermanos. 
+
+    odd
+        Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+    even
+        Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
+*/
+tr:nth-child(even) {
+    background-color: #f2f2f2; /*Establece el color de fondo de un elemento*/
+}
+
+td {
+    border: 3px solid #ddd; /*Establece algunas o todas las propiedades de todos los bordes de los elementos*/
+    /*
+		Valores permitidos	
+			Alguno o todos los siguientes valores y en cualquier orden:
+				anchura
+				Estilo de borde
+				color
+		
+		Valor inicial = Cada propiedad define su propio valor por defecto
+    */
+    padding: 8px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+    text-align: center; /*Establece la alineación del contenido de un elemento de bloque*/
+    font-weight: bold; /*Establece el grosor de cada letra*/
+}

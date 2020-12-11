@@ -1,0 +1,53 @@
+body {
+	background-color: #eee; /*Establece el color de fondo de un elemento*/
+}
+
+.caja {
+	background-color: #fff; /*Establece el color de fondo de un elemento*/
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;
+	border-radius: 4px; /* border-radius permite definir qué tan redondeadas serán las esquinas*/
+	border-top: solid 0px;
+}
+
+.parrafo {
+	margin: 0px; /*La propiedad margin establece el margen para los cuatro lados*/
+}
+
+.contenido {
+	padding: 10px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+}
+
+.cabecera {
+	padding: 10px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	border-bottom: solid 1px #eee;
+}
+
+.pie {
+	padding: 10px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	border-top: solid 1px #eee;
+}
+
+.btn-aceptar {
+	background-color: #0090ff; /*Establece el color de fondo de un elemento*/
+	padding: 5px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	border: 0px; /*Establece algunas o todas las propiedades de todos los bordes de los elementos*/
+	/*
+		Valores permitidos	
+			Alguno o todos los siguientes valores y en cualquier orden:
+				anchura
+				Estilo de borde
+				color
+		
+		Valor inicial = Cada propiedad define su propio valor por defecto
+	*/
+	color: #fff; /*Establece el color del texto de un elemento*/
+}
+
+.btn-cancelar {
+	background-color: #aaa; /*Establece el color de fondo de un elemento*/
+	padding: 5px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	border: 0px; /*Establece algunas o todas las propiedades de todos los bordes de los elementos*/
+	color: #fff; /*Establece el color del texto de un elemento*/
+}

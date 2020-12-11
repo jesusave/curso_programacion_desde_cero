@@ -1,0 +1,93 @@
+body {
+    background-color: #eeeeee; /*Establece el color de fondo de un elemento*/
+}
+
+ul {
+    list-style-type: none; /*Establece el marcador de los elementos de la lista*/
+    /*
+        Valores permitidos	
+            Uno y sólo uno de los siguientes valores:
+                disc
+                circle
+                square
+                decimal
+                decimal-leading-zero
+                lower-roman
+                upper-roman
+                lower-greek
+                lower-latin
+                upper-latin
+                armenian
+                georgian
+                lower-alpha
+                upper-alpha
+                none
+                inherit
+
+        Valor inicial = disc
+    */
+    margin: 0px; /*La propiedad margin establece el margen para los cuatro lados*/
+    padding: 0px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+    overflow: hidden; /*Controla el comportamiento de los contenidos que no caben en su elemento contenedor*/
+    position: fixed; /* Posiciona los elementos de forma normal, relativa, absoluta o fija */
+    top: 0px; /*Indica el desplazamiento entre el borde superior del elemento y la parte superior de su elemento contenedor*/
+    /*
+        Valores permitidos	
+            Alguno o todos los siguientes valores y en cualquier orden:
+                medida
+                porcentaje
+                auto
+                inherit
+            Si se utilizan porcentajes, hace referencia a la altura del elemento en el que se encuentra
+
+        Valor inicial = auto
+    */
+    left: 0px; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+    /*
+        Valores permitidos	
+            Alguno o todos los siguientes valores y en cualquier orden:
+                medida
+                porcentaje
+                auto
+                inherit
+            Si se utilizan porcentajes, hace referencia a la altura del elemento en el que se encuentra
+
+        Valor inicial = auto
+    */
+    width: 100%; /*Establece la anchura de algunos o todos los bordes de los elementos*/
+    background-color: #16697a; /*Establece el color de fondo de un elemento*/
+}
+
+li {
+    float: left; /*Posiciona los elementos de forma flotante*/
+    /*
+        Valores permitidos	
+            Alguno o todos los siguientes valores y en cualquier orden:
+                left
+                right
+                none
+                inherit
+
+        Valor inicial = none
+    */
+}
+
+li a {
+    display: block; /* Establece el tipo de caja generada por un elemento */
+    color: white; /*Establece el color del texto de un elemento*/
+    text-align: center; /*Establece la alineación del contenido de un elemento de bloque*/
+    padding: 14px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+    text-decoration: none; /*Establece la decoración que se añade al texto de un elemento*/
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.3); /*Establece el color de fondo de un elemento*/
+}
+
+.active {
+    background-color: #ffa62b; /*Establece el color de fondo de un elemento*/
+}
+
+.content {
+    margin-top: 55px; /*Establece la anchura del margen superior de los elementos de bloque*/
+}
