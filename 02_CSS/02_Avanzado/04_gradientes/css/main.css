@@ -1,0 +1,39 @@
+body {
+    background-color: #eeeeee;
+}
+
+.gradiente {
+    padding: 300px;
+    border-radius: 4px;
+    /*Para usar gradientes usamos background-image*/
+    background-image: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /*
+        Pirmero colocamos la dirección, color-1, color-2...
+        Podemos usar direcciones
+            left | right
+            top  | bottom
+        Tambien podemos usar angulos en grados
+            0deg | 90deg
+            180deg | 360deg
+
+        Podemos usar colores RGBA y lograr transparencia
+    */
+}
+
+.gradiente-02 {
+    padding: 300px;
+    background-image: repeating-linear-gradient(0deg, rgba(235, 184, 18, 1) 10%, tomato 20%); /*podemos crear patrones a partir de los degradados que creamos y permitirles que se repitan infinitamente*/
+}
+
+.gradiente-03 {
+    padding: 200px;
+    background: linear-gradient(rgba(25, 209, 231, 0.5), rgba(243, 17, 224, 0.5)), url('../img/01.jpg') no-repeat fixed center;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+p {
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    color: #000000;
+}

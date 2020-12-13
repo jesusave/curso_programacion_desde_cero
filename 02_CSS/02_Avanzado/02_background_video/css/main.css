@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+	font-family: 'Ubuntu', sans-serif; /*Establece la fuente o tipo de letra*/
+	line-height: 1.5; /*Establece el interlineado o separación del texto*/
+}
+
+a {
+	text-decoration: none; /*Establece la decoración que se añade al texto de un elemento*/
+	color: #000000; /*Establece el color del texto de un elemento*/
+}
+
+h1 {
+	font-weight: 300; /*Establece el grosor de cada letra*/
+	font-size: 60px; /*Establece el tamaño de letra*/
+	line-height: 1.2; /*Establece el interlineado o separación del texto*/
+	margin-bottom: 15px; /*La propiedad margin establece el margen para la parte inferior de un elemento */
+}
+
+.video-section {
+	height: 100vh; /*Establece la altura de los elementos de bloque*/
+	display: flex; /* Establece el tipo de caja generada por un elemento */
+	align-items: center; /*Indica la alineación de un elemento dentro del bloque que lo contiene*/
+	/*
+		Valores permitidos	
+			center
+			start
+			end
+			self-start
+			self-end
+			flex-start
+			flex-end
+	*/
+
+	justify-content: center; /* Define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor*/
+	/*
+		Alinear items flex desde el comienzo
+			flex-start
+
+		Alinear items desde el final
+			flex-end
+
+		Alinear items en el centro 
+			center
+
+		Distribuir items uniformemente
+		El primer item al inicio, el último al final
+			space-between
+
+		Distribuir items uniformemente
+		Los items tienen el mismo espacio a su alrededor
+			space-around
+	*/
+	text-align: center; /*Establece la alineación del contenido de un elemento de bloque*/
+	color: #fff; /*Establece el color del texto de un elemento*/
+	padding: 0 20px; /*La propiedad padding establece el espacio de relleno. El primero es vertical y el segudno es horizontal*/
+}
+
+.video-container {
+	position: absolute; /*Posiciona los elementos de forma normal, relativa, absoluta o fija */
+	top: 0; /*Indica el desplazamiento entre el borde superior del elemento y la parte superior de su elemento contenedor*/
+	left: 0; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+	width: 100%; /*Establece la anchura de los elementos de bloque*/
+	height: 100%; /*Establece la altura de los elementos de bloque*/
+	overflow: hidden; /*Controla el comportamiento de los contenidos que no caben en su elemento contenedor*/
+	background: #000000 url('../img/01.jpg') no-repeat center center;
+}
+
+.video-container video {
+	min-width: 100%; /*Se usa para determinar la anchura mínima de un elemento*/
+	min-height: 100%; /*Se usa para determinar la altura mínima de un elemento*/
+  	position: absolute; /*Posiciona los elementos de forma normal, relativa, absoluta o fija */
+	top: 50%; /*Indica el desplazamiento entre el borde superior del elemento y la parte superior de su elemento contenedor*/
+	left: 50%; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+	transform: translate(-50%, -50%); /*Define cómo se transforma el elemento.*/
+	object-fit: cover; /* indica cómo el contenido de un elemento reemplazado, por ejemplo un <img> o <video>, debería redimensionarse para ajustarse a su contenedor.*/
+}
+
+.video-container:after {
+	content: ''; /*Se usa junto con los pseudo-elementos :before y :after para generar contenido que se adjunta antes o después de un selector*/
+	z-index: 1; /*Indica el orden de un elemento posicionado y sus descendientes.*/
+	/*
+		Valores permitidos	
+			auto
+			entero
+			inherit
+	*/
+	height: 100%; /*Establece la altura de los elementos de bloque*/
+	width: 100%; /*Establece la anchura de los elementos de bloque*/
+	top: 0; /*Indica el desplazamiento entre el borde superior del elemento y la parte superior de su elemento contenedor*/
+	left: 0; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+	background: rgba(0, 0, 0, 0.5); /*Puede definir los valores de una o de todas las propiedades siguientes: background-attachment, color, image, position, repeat.*/
+	position: absolute; /*Posiciona los elementos de forma normal, relativa, absoluta o fija */
+}
+
+.content {
+	z-index: 2; /*Indica el orden de un elemento posicionado y sus descendientes.*/
+} 
+
+.btn {
+	display: inline-block; /* Establece el tipo de caja generada por un elemento */
+	padding: 10px 30px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	color: #fff; /*Establece el color del texto de un elemento*/
+	border-radius: 5px; /*border-radius permite definir qué tan redondeadas serán las esquinas*/
+	border: solid #fff 1px; /*Establece algunas o todas las propiedades de todos los bordes de los elementos*/
+	margin-top: 25px; /*Establece la anchura del margen superior de los elementos de bloque*/
+	opacity: 0.7; /*Define la transparencia de un elemento.*/
+}
+
+.btn:hover {
+	transform: scale(0.98); /*Define cómo se transforma el elemento.*/
+}
+
+#about {
+	padding: 40px; /*La propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	text-align: center; /*Establece la alineación del contenido de un elemento de bloque*/
+}
+
+#about p {
+	font-size: 1.2rem; /*Establece el tamaño de letra*/
+	max-width: 600px; /*Limita la anchura máxima de los elementos de bloque*/
+	margin: auto; /*La propiedad margin establece el margen para los cuatro lados*/
+}
+
+#about h2 {
+	margin: 30px 0; /*La propiedad margin establece el margen para los cuatro lados. El primero es vertical y el segudno es horizontal*/
+	color: #000000;
+}
+
+.social a {
+	margin: 0 5px; /*La propiedad margin establece el margen para los cuatro lados. El primero es vertical y el segudno es horizontal*/
+}

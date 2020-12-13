@@ -1,0 +1,166 @@
+.background {
+  	height: 300px; /*Establece la altura de los elementos de bloque*/
+	background-color: yellow; /*Establece el color de fondo de un elemento*/
+  	background-image: url('../img/02.jpg'); /*Establece la imagen de fondo de un elemento*/
+	  
+	background-repeat: no-repeat; /*Controla el tipo de repetición de las imágenes de fondo*/
+	/*
+		Valores permitidos	
+			Uno y sólo uno de los siguientes valores:
+				repeat
+				repeat-x
+				repeat-y
+				no-repeat
+				inherit
+
+		Valor inicial = repeat
+	*/
+	
+	background-attachment: fixed; /*Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador*/
+	/*
+		Valores permitidos	
+			Uno y sólo uno de los siguientes valores:
+				scroll - desplazarse
+				fixed - fijo
+				inherit
+
+		Valor inicial = scroll
+	*/  
+
+	background-position: center; /*Controla la posición de las imágenes de fondo*/
+	/*
+		La explicación de los valores permitidos para esta propiedad es muy compleja debido a su gran flexibilidad. 
+		Existen tres opciones diferentes para establecer el valor o valores de esta propiedad:
+
+		1 - Uno y sólo uno de los siguientes valores:
+				porcentaje
+				medida
+				left
+				center
+				right
+
+			Seguido opcionalmente por uno y sólo uno de los siguientes valores:
+				porcentaje
+				medida
+				top
+				center
+				bottom
+
+		2 - Uno y sólo uno de los siguientes valores:
+				left
+				center
+				right
+
+			Seguido o precedido opcionalmente por uno y sólo uno de los siguientes valores:
+				top
+				center
+				bottom
+
+		3 - inherit
+
+		Si se utilizan porcentajes, hace referencia a la anchura del propio elemento
+
+		Valor inicial = 0% 0%
+	*/
+	
+	background-size: auto; /*Especifica el tamaño de las imágenes de fondo.*/
+	/*
+		Valores permitidos	
+			auto - La imagen de fondo conservará su tamaño original
+			pexels (120px 80px) - Puede especificar un tamaño en píxeles
+				el primer valor es el tamaño horizontal
+				el segundo es el tamaño vertical
+			porcentuales (100% 50%) - También puede utilizar valores porcentuales. Tenga en cuenta que esto puede alterar la relación de aspecto de la imagen de fondo y generar resultados inesperados.
+			contain - Escala la imagen al mayor tamaño posible sin recortarla ni estirarla.
+			cover - Escala la imagen al mayor tamaño posible sin estirarla. Si las proporciones de la imagen difieren de las del elemento, es recortada vertical u horizontalmente para que no quede un espacio vacío.
+	*/
+
+  	border-radius: 4px; /* border-radius permite definir qué tan redondeadas serán las esquinas*/
+  	padding: 8px 12px; /*La propiedad padding establece el espacio de relleno. El primero es vertical y el segudno es horizontal*/
+}
+
+.background-02 {
+	/*Podemos usar todo lo anterior en una sola propiedad*/
+  	background: #f9e0ae url('../img/01.jpg') no-repeat fixed center;
+    background-size: cover; /*Especifica el tamaño de las imágenes de fondo.*/
+    height: 100%; /*Establece la altura de los elementos de bloque*/
+    position: relative; /* Posiciona los elementos de forma normal, relativa, absoluta o fija */
+    border-radius: 4px; /* border-radius permite definir qué tan redondeadas serán las esquinas*/
+}
+
+.title-one {
+	font-family: 'Ubuntu'; /*Establece la fuente o tipo de letra*/
+	font-size: 8em; /*Establece el tamaño de letra*/
+	background-color: black; /*Establece el color de fondo de un elemento*/
+
+	mix-blend-mode: multiply; /*describe cómo el contenido de un elemento debe mezclarse con el contenido del elemento que está tras él y con el fondo del elemento*/
+	/*
+		Valores permitidos
+			normal
+			multiply
+			screen
+			overlay
+			darken
+			lighten
+			color-dodge
+			color-burn
+			hard-light
+			soft-light
+			difference
+			exclusion
+			hue
+			saturation
+			color
+			luminosity
+	*/
+
+	color: white; /*Establece el color del texto de un elemento*/
+	border-radius: 4px; /* border-radius permite definir qué tan redondeadas serán las esquinas*/
+	padding: 8px 12px; /*La propiedad padding establece el espacio de relleno. El primero es vertical y el segudno es horizontal*/
+	margin: 0; /*La propiedad margin establece el margen para los cuatro lados.*/
+    position: absolute; /*Posiciona los elementos de forma normal, relativa, absoluta o fija */
+    top: 50%; /*Indica el desplazamiento entre el borde superior del elemento y la parte superior de su elemento contenedor*/
+	left: 50%; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+	
+	transform: translate(-50%, -50%); /*Define cómo se transforma el elemento*/
+	/*
+		Valores permitidos	
+			none - Elimina cualquier transformación.
+			translateX(40px) - Mueve el elemento en el eje horizontal.
+			translateY(20px) - Mueve el elemento en el eje vertical.
+
+			translateY(100%) - Puede utilizar valores porcentuales 
+				el porcentaje es relativo al elemento en sí , y no al padre.
+
+			translate(20px, -10%) - Puede usar translate() con dos valores
+				el primer valor es para el eje horizontal
+				el segundo valor es para el eje vertical
+ 
+			scaleX(1.5) - Escale el elemento en el eje horizontal .
+			scaleY(0.4) - Escale el elemento en el eje vertical .
+
+			scaleY(-2) - Puedes usar valores negativos : invertirá el elemento.
+
+			scale(0.8, 0.8) - Puede usar scale() con dos valores
+				el primer valor es para el eje horizontal
+				el segundo valor es para el eje vertical
+				Al usar el mismo valor para ambos, puede escalar proporcionalmente .
+
+			rotate(45deg) - Gire el elemento.
+				Puedes usar:
+					degrees de 0 a 360deg
+					gradians de 0 a 400grad
+					radians de 0 a 2πrad
+					turns de 0 a 1turn
+
+
+			skewX(15deg) - Inclina el elemento en el eje horizontal
+			skewY(45deg) - Inclina el elemento en el eje vertical
+
+			skew(10deg, -20deg) - Puede usar skew()con dos valores :
+				el primer valor es para el eje horizontal
+				el segundo valor es para el eje vertical
+
+			rotate(5deg) scale(1.1, 1.1) translate(-20%, 30px) - Puede combinar varias transformaciones separándolas con un espacio.
+	*/
+}

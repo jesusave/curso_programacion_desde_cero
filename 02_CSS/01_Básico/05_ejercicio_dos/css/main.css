@@ -25,7 +25,7 @@
         1vw = 1% del ancho del viewport
         100vw = ancho del viewport
     */
-  height: 100vh;
+  height: 100vh; /*Establece la altura de los elementos de bloque*/
   line-height: 100vh; /*Establece el interlineado del texto*/
   /*
     Valores permitidos  
