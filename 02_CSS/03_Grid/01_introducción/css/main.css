@@ -1,0 +1,19 @@
+.grid {
+	display: inline-grid; /*Tambien podemos usar inline-grid para que solo use el espacio de los elementos*/
+	/*
+		inline-grid: Establece una cuadrícula con ítems en línea, de forma equivalente a inline-block.
+		grid: Establece una cuadrícula con ítems en bloque, de forma equivalente a block.
+	*/
+}
+
+.rojo {
+	background-color: red;
+}
+
+.verde {
+	background-color: green;
+}
+
+.azul {
+	background-color: blue;
+}

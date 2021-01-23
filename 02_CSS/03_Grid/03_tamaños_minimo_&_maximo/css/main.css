@@ -1,0 +1,48 @@
+body {
+	background-color:rgb(66, 66, 66);
+}
+
+.grid {
+	display: grid; /*Tambien podemos usar inline-grid para que solo use el espacio de los elementos*/
+	/*
+		inline-grid: Establece una cuadrícula con ítems en línea, de forma equivalente a inline-block.
+		grid: Establece una cuadrícula con ítems en bloque, de forma equivalente a block.
+	*/
+
+	grid-template-rows: minmax(100px, auto); /*El ancho minimo (100px) y el alto maximo*/
+
+	grid-template-columns: minmax(auto, 50%) 1fr 3em; /*El ancho minimo (auto) y el alto maximo (50%)*/
+
+	/*
+
+		grid-template-columns 	[c1] [c2] ... 	Establece el tamaño de cada columna (col 1, col 2...).
+		grid-template-rows 	[f1] [f2] ... 	Establece el tamaño de cada fila (fila 1, fila 2...).
+			Para las filas que no le indiquemos una valor, tomarán una altura automatica
+	*/
+}
+
+.rojo {
+	background-color: red;
+}
+
+.verde {
+	background-color: green;
+}
+
+.azul {
+	background-color: blue;
+	color: white;
+}
+
+.blanco  {
+	background-color: white;
+}
+
+.negro {
+	background-color: black;
+	color: white;
+}
+
+.amarillo {
+	background-color: yellow;
+}

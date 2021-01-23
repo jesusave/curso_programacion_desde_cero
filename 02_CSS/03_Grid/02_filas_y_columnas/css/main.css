@@ -1,0 +1,36 @@
+.grid {
+	display: grid; /*Tambien podemos usar inline-grid para que solo use el espacio de los elementos*/
+	/*
+		inline-grid: Establece una cuadrícula con ítems en línea, de forma equivalente a inline-block.
+		grid: Establece una cuadrícula con ítems en bloque, de forma equivalente a block.
+	*/
+
+	/*grid-template-rows: 50px 100px;*/
+
+	/* grid-template-columns: 90px 50px 120px 50px; */
+
+	grid-template-columns: 1fr 2fr 3fr;
+	/*Tambien podemos usar fracciones con fr (1fr) para dividir el total entre los valores que indiquemos*/
+
+	grid-template-columns: 2rem 20% 1fr 2fr; /*1rem sería igual a 16px*/
+	/*Tambien podemos usar diferentes tipos de medidas*/
+
+	/*
+
+		grid-template-columns 	[c1] [c2] ... 	Establece el tamaño de cada columna (col 1, col 2...).
+		grid-template-rows 	[f1] [f2] ... 	Establece el tamaño de cada fila (fila 1, fila 2...).
+			Para las filas que no le indiquemos una valor, tomarán una altura automatica
+	*/
+}
+
+.rojo {
+	background-color: red;
+}
+
+.verde {
+	background-color: green;
+}
+
+.azul {
+	background-color: blue;
+}

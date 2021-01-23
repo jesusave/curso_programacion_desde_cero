@@ -41,13 +41,6 @@ body {
     display: inline-block; /* Establece el tipo de caja generada por un elemento */
 }
 
-.dropdown-content {
-    display: none; /* Establece el tipo de caja generada por un elemento */
-    position: absolute; /* Posiciona los elementos de forma normal, relativa, absoluta o fija */
-    background-color: #f9f9f9; /*Establece el color de fondo de un elemento*/
-    min-width: 160px; /*Se usa para determinar la anchura mínima de un elemento*/
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2); /*añade efectos de sombra alrededor del marco de un elemento.*/
-}
 
 .dropdown-content a {
     color: black; /*Establece el color del texto de un elemento*/
@@ -66,4 +59,12 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block; /* Establece el tipo de caja generada por un elemento */
+}
+
+.dropdown-content {
+    display: none; /* Establece el tipo de caja generada por un elemento */
+    position: absolute; /* Posiciona los elementos de forma normal, relativa, absoluta o fija */
+    background-color: #f9f9f9; /*Establece el color de fondo de un elemento*/
+    min-width: 160px; /*Se usa para determinar la anchura mínima de un elemento*/
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2); /*añade efectos de sombra alrededor del marco de un elemento.*/
 }

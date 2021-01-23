@@ -1,0 +1,27 @@
+body {
+	background-color: #eee;
+}
+
+.text {
+	margin: 12px;
+	padding: 30px;
+}
+
+.caja {
+	/*La propiedad de transform se aplica a display:bloc, los div por defecto son propiedades de bloque*/
+	position: relative;
+	left: 50px;
+	top: 50px;
+	width: 200px;
+	height: 100px;
+	background-color: white;
+	box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
+	transition: background-color 2s, transform 1s, color 3s; /*Cuando no indicamos un valor, por defecto se aplica a todos y se requiere el tiempo de transición*/
+	/* transition-delay: 0.4s; /*Define cuánto tiempo tiene que esperar la transición antes de comenzar, se pueden usar valores negativos.*/
+}
+
+.caja:hover {
+	background-color: rgba(36, 255, 5, 0.2);
+	transform: scale(1.1, 1.1);
+	color: red;
+}
